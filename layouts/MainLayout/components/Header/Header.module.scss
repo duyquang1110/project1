@@ -1,0 +1,416 @@
+@import '/styles/global.scss';
+.menuHidden {
+	visibility: hidden;
+}
+.popover {
+	:global {
+		.ant-popover-inner-content {
+			padding: 0 !important;
+			color: rgba(0, 0, 0, 0.85);
+		}
+	}
+}
+.menuContent {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	a {
+		color: $color242933 !important;
+	}
+	a:hover {
+		color: $color00A94F !important;
+		font-weight: 500;
+	}
+	&__item:hover {
+		background: $colorf2f2f2;
+		p {
+			color: $color00A94F !important;
+			font-weight: 500;
+		}
+		// a:hover {
+		// 	color: $color00A94F !important;
+		// }
+		// &__icon {
+		// 	color: $color00A94F;
+		// }
+		// &__icon:hover {
+		// 	color: red !important;
+		// }
+		// p {
+		// 	font-weight: 500;
+		// 	color: $color00A94F;
+		// }
+	}
+	&__item {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 40px;
+		width: 100%;
+		min-width: 206px;
+		cursor: pointer;
+		padding: 25px 17.5px !important;
+
+		p {
+			margin: 0 0 0 10px;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			color: $color242933;
+		}
+	}
+}
+.menuClicked {
+	color: $color00A94F !important;
+	text-decoration: underline;
+	transition: color ease-in-out 0.5s;
+}
+.menuClickedDesktop {
+	color: $color4F5E6F !important;
+}
+.login {
+	&__googleFirst {
+		margin-bottom: 21px;
+	}
+	&__rules {
+		margin: 2px 0 0 0;
+		font-weight: 400;
+		font-size: 16px;
+		cursor: pointer;
+		line-height: 22px;
+		text-align: center;
+		color: $color00A94F;
+		text-decoration-line: underline;
+	}
+	&__accept {
+		margin: 0;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: $color363636;
+	}
+	&__newAccount {
+		text-align: center;
+		font-weight: 400;
+		margin: 16px 0 0 0;
+		font-size: 16px;
+		cursor: pointer;
+		line-height: 22px;
+		text-decoration-line: underline;
+		color: $color00A94F;
+	}
+	&__form {
+		&__email {
+			margin-bottom: 16px;
+		}
+		&__password {
+			margin-bottom: 12px;
+		}
+		&__button {
+			margin-bottom: 16px;
+			&__item {
+				width: 100%;
+				height: 50px;
+				background: $color00A94F;
+				box-shadow: 0px 1px 22px 1px rgba(69, 64, 219, 0.04);
+				border-radius: 3px;
+				font-weight: 700;
+				font-size: 18px;
+				color: $colorFFFFFF;
+				border: none;
+				line-height: 21.09px;
+				text-align: center;
+			}
+		}
+		&__forgetPassword {
+			margin: 0 0 16px 0;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			width: 100%;
+			text-align: right;
+			text-decoration-line: underline;
+			color: $color00A94F;
+			cursor: pointer;
+		}
+	}
+	&__instruction {
+		margin-top: 21px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		&__continue {
+			margin-bottom: 2px;
+			color: $color363636;
+		}
+		&__use {
+			cursor: pointer;
+			color: $color00A94F;
+		}
+		p {
+			text-align: center;
+			line-height: 22px;
+			font-weight: 400;
+			font-size: 14px;
+			margin: 0;
+		}
+	}
+	&__google {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		cursor: pointer;
+		height: 54px;
+		background: $colorFFFFFF;
+		border: 1px solid $colordddddd;
+		border-radius: 6px;
+		p {
+			margin: 0;
+			font-weight: 400;
+			font-size: 16px;
+			margin-left: 13px;
+			line-height: 18.75px;
+			color: $color333333;
+		}
+	}
+	&__icon {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
+		&__item {
+			cursor: pointer;
+			font-size: 1.1rem;
+		}
+	}
+	&__title {
+		margin: 0;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+		margin-bottom: 20px;
+		color: $color363636;
+	}
+}
+.menuTablet {
+	background-image: url('./../../../../public/assets/img/Header/scroll.png') !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.headerAnother {
+	background-color: red !important;
+}
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	height: 52px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 52px;
+	background-color: transparent !important;
+	&__icon {
+		margin-right: 17.5px;
+		color: $colorFFFFFF;
+		font-size: 1.25rem;
+	}
+}
+.headerScroll {
+	padding-bottom: 14px !important;
+	position: relative;
+	background-image: url('./../../../../public/assets/img/Header/scroll.png') !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+.headerTablet {
+	position: unset !important;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	z-index: 10;
+	width: 100%;
+	&__childTablet {
+		flex-direction: column;
+		padding: 0 !important;
+	}
+	&__child {
+		width: 100%;
+		@extend .container;
+		padding: 14px 140px 0 139px;
+		@include to_MDesktop {
+			padding: 14px 100px 0 100px;
+		}
+		@include to_SDesktop {
+			padding: 14px 60px 0 60px;
+		}
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		&__account {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin: -10px 0 0 0 !important;
+			@include to_SmDesktop {
+				width: 100%;
+			}
+			&__avatar {
+				margin-right: 7px;
+				cursor: pointer;
+				img {
+					border-radius: 50%;
+				}
+			}
+			&__user {
+				cursor: pointer;
+				display: flex;
+				width: 100%;
+				justify-content: flex-start;
+				align-items: center;
+				&__icon {
+					color: $colorFFFFFF;
+					margin-left: 5.54px;
+					font-size: 0.75rem;
+					@include to_SmDesktop {
+						color: $color4F5E6F;
+					}
+				}
+			}
+			h1 {
+				margin: 0;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 21.09px;
+				color: $colorFFFFFF;
+				@include to_SmDesktop {
+					color: $color4F5E6F;
+					font-weight: 600;
+					font-size: 16px;
+				}
+			}
+		}
+		&__imgTablet {
+			width: 100% !important;
+			margin-right: 0 !important;
+			margin-bottom: 10px !important;
+		}
+		&__img {
+			margin-right: 75px;
+			margin-bottom: 5px;
+			cursor: pointer;
+			@include to_MDesktop {
+				margin-bottom: 9px;
+			}
+			@include to_SDesktop {
+				margin-bottom: 5px;
+			}
+		}
+		&__buttonTablet {
+			width: 100% !important;
+			justify-content: flex-start !important;
+			align-items: flex-start !important;
+			flex-direction: column !important;
+			button {
+				max-width: 148px !important;
+			}
+		}
+		&__button {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			button {
+				width: 100%;
+				min-width: 148px;
+				border-radius: 3px;
+				font-weight: 400;
+				color: $colorFFFFFF;
+				height: 44px;
+				text-align: center;
+				font-size: 18px;
+				line-height: 21.09px;
+				@include to_MDesktop {
+					margin-bottom: 2px;
+				}
+				@include to_SDesktop {
+					margin-bottom: 1px;
+				}
+			}
+			&__post {
+				background-color: $color00A94F;
+				border: none;
+			}
+			&__loginTablet {
+				margin-right: 0 !important;
+				margin-bottom: 15px !important;
+				color: $color4F5E6F !important;
+				border: 2px solid $color4F5E6F !important;
+			}
+			&__login {
+				margin-right: 20px;
+				background-color: transparent;
+				border: 2px solid $colorFFFFFF;
+			}
+		}
+		&__menuTablet {
+			flex-direction: column;
+			width: 100% !important;
+			align-items: flex-start !important;
+			li {
+				margin-top: 0 !important;
+				color: $color4F5E6F;
+			}
+		}
+		&__menu {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			&__li:not(:last-child) {
+				margin-bottom: 10px !important;
+			}
+			// &__item:not(:last-child) {
+			// 	margin-bottom: 10px !important;
+			// 	@include to_SmDesktop {
+			// 		margin-bottom: 10px !important;
+			// 	}
+			// }
+			li:hover {
+				color: $color00A94F !important;
+			}
+			li {
+				font-weight: 700;
+				cursor: pointer;
+				margin-right: 50px;
+				font-size: 16px;
+				line-height: 18.75px;
+				color: $colorFFFFFF;
+				list-style: none;
+				@include to_MDesktop {
+					text-align: center;
+					// margin-top: 10px;
+					margin-bottom: 3.5px;
+				}
+				@include to_SDesktop {
+					margin-bottom: 0px;
+				}
+				@include to_SmDesktop {
+					margin-bottom: 10px !important;
+				}
+			}
+		}
+	}
+}

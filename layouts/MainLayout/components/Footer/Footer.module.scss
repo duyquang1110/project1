@@ -1,0 +1,207 @@
+@import '/styles/global.scss';
+.footer {
+	width: 100%;
+	background-color: $color252C41;
+	&__parent {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		@include to_SmDesktop {
+			flex-direction: column;
+		}
+		max-width: 1162px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(237, 239, 241, 0.5);
+	}
+	&__child {
+		width: 100%;
+		@extend .container;
+		height: 476px;
+		padding: 30px 139px;
+		@include to_LDPhone {
+			padding: 30px 89px;
+		}
+		@include to_MDPhone {
+			padding: 30px 79px;
+		}
+		@include to_SmPhone {
+			padding: 30px 49px;
+		}
+		@include to_SmDesktop {
+			height: 100%;
+		}
+		&__copyright {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include to_SmDesktop {
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			&__right {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				@include to_SmDesktop {
+					width: 100%;
+					justify-content: space-between;
+				}
+				@include to_MDPhone {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+				p {
+					margin: 30px 0 0 40px !important;
+					@include to_SmDesktop {
+						margin: 30px 0 0 0 !important;
+					}
+					font-weight: 400;
+					font-size: 14px;
+					margin-left: 40px;
+					line-height: 16.41px;
+					color: $colorFFFFFF;
+				}
+			}
+			h1 {
+				margin: 30px 0 0 0;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16.41px;
+				color: $colorFFFFFF;
+			}
+		}
+		&__content {
+			display: grid;
+			grid-gap: 96px;
+			@include to_MDesktop {
+				grid-gap: 76px;
+			}
+			@include to_SDesktop {
+				grid-gap: 46px;
+			}
+			grid-template-columns: repeat(4, 1fr);
+			@include to_SmDesktop {
+				grid-template-columns: repeat(3, 1fr);
+				grid-column-gap: 76px;
+				grid-row-gap: 0px;
+			}
+			@include to_MTablet {
+				grid-column-gap: 246px;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@include to_SmTablet {
+				grid-column-gap: 56px;
+			}
+			@include to_LDPhone {
+				grid-template-columns: repeat(1, 1fr);
+			}
+			border-bottom: 1px solid rgba(237, 239, 241, 0.5);
+			padding-bottom: 67px;
+			&__item {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-direction: column;
+				&__title {
+					display: flex;
+					width: 100%;
+					justify-content: flex-start;
+					align-items: center;
+					p {
+						cursor: pointer;
+						margin: 0 0 0 10px;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16.41px;
+						color: $colorFFFFFF;
+					}
+				}
+				h1 {
+					width: 100%;
+					margin: 30px 0 24px 0;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 21.09px;
+					color: $colorFFFFFF;
+				}
+			}
+		}
+		&__social {
+			width: 100%;
+			display: flex;
+			margin-top: 10px;
+			justify-content: flex-start;
+			align-items: center;
+			> div {
+				cursor: pointer;
+				@include to_MDesktop {
+					margin-top: 2.5px;
+				}
+			}
+			&__icon:not(:last-child) {
+				margin-right: 30px;
+				@include to_MDesktop {
+					margin-right: 20px;
+				}
+				@include to_SDesktop {
+					margin-right: 10px;
+				}
+			}
+		}
+		&__information {
+			display: flex;
+			margin-right: 87.17px;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			min-width: 585px;
+			height: 44px;
+			border: 1px solid $colorFFFFFF;
+			border-radius: 3px;
+			@include to_SmDesktop {
+				margin: 22.5px 0 10px 0;
+			}
+			@include to_SmTablet {
+				min-width: 100%;
+			}
+			&__input {
+				width: 100%;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16.41px;
+				color: $colorFFFFFF;
+				background-color: transparent;
+				height: 100%;
+				padding: 15px 20px;
+				&::-webkit-input-placeholder {
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 16.41px;
+					color: $colorFFFFFF;
+				}
+			}
+			&__button {
+				width: 100%;
+				max-width: 120px;
+				height: 40px;
+				border: none;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 16.41px;
+				color: $colorFFFFFF;
+				background: $color00a94f;
+				border-radius: 3px;
+			}
+		}
+		&__img {
+			width: 100%;
+			margin-top: 5px;
+			margin-right: 88px;
+			@include to_MDesktop {
+				margin-top: 10px;
+			}
+		}
+	}
+}

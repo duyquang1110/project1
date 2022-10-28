@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web-jobseekers:
+    build: .
+    command: npm run start-prod
+    volumes:
+      - .:/data/www/web-jobseekers/node_modules
+    ports:
+      - "10005:3000"

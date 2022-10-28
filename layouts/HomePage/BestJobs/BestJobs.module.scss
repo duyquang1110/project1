@@ -1,0 +1,207 @@
+@import '/styles/global.scss';
+.bestJobsDetail {
+	padding-bottom: 60px;
+}
+.bestJobs {
+	overflow: hidden;
+	@extend .container;
+	&__button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 40px;
+		margin-bottom: 60px;
+		&__child {
+			width: 100%;
+			max-width: 148px;
+			height: 44px;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 23.44px;
+			text-align: center;
+			color: $colorFFFFFF;
+			background: $color00a94f;
+			border-radius: 3px;
+		}
+	}
+	&__item {
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: repeat(4, 1fr);
+		margin: 0 139px;
+		// overflow: auto;
+		// height: 925px;
+		// padding: 50px 5px;
+		@include to_SDesktop {
+			margin: 0 79px;
+		}
+		@include to_SmDesktop {
+			margin-top: 30px;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@include to_SmTablet {
+			grid-row-gap: 30px;
+			grid-column-gap: 0;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include to_LDPhone {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__empty {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			margin: 0 0 35px 0;
+		}
+		&__child {
+			width: 100%;
+			max-width: 268px;
+			@include to_SmTablet {
+				min-width: 268px !important;
+			}
+			@include to_LDPhone {
+				min-width: 288px !important;
+			}
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			flex-direction: column;
+			height: 268px;
+			padding: 12px;
+			background: $colorFFFFFF;
+			box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 20px;
+			&__button {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				p {
+					margin: 0;
+				}
+				&__money {
+					margin-top: 38px !important;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 21.09px;
+					cursor: pointer;
+					width: 100%;
+					max-width: 75px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					/* muốn text hiện đúng 3 dòng */
+					display: -webkit-box;
+					-webkit-line-clamp: 1;
+					-webkit-box-orient: vertical;
+					span {
+						font-size: 12px;
+						line-height: 14.06px;
+					}
+				}
+				&__application {
+					margin-top: 38px !important;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 102px;
+					font-weight: 600;
+					cursor: pointer;
+					font-size: 16px;
+					line-height: 18.75px;
+					text-align: center;
+					color: $color00a94f;
+					height: 39px;
+					// background: rgba(0, 169, 79, 0.1);
+					border-radius: 10px;
+					background-color: $colorE5F7ED;
+				}
+			}
+			h1 {
+				margin: 22px 0 10px 0;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 21.09px;
+				text-align: center;
+				color: $color000000;
+			}
+			&__address {
+				font-weight: 500;
+				margin: 0;
+				font-size: 12px;
+				line-height: 14.06px;
+				text-align: center;
+				color: $color000000;
+			}
+		}
+	}
+	&__child {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin: 0 139px;
+		@include to_SDesktop {
+			margin: 0 79px;
+		}
+		@include to_SmDesktop {
+			flex-direction: column;
+		}
+		&__left {
+			margin: 40px 0;
+			width: 100%;
+		}
+		&__right {
+			border-bottom: 2px solid #edeff1;
+			width: 100%;
+			margin: 40px 0;
+			@include to_SmDesktop {
+				margin: 0px 0;
+			}
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			@include to_SmTablet {
+				flex-wrap: wrap;
+			}
+			@include to_SmTablet {
+				justify-content: center;
+			}
+			&__active {
+				background-color: $color00a94f;
+				color: $colorFFFFFF;
+			}
+			&__deactive {
+				color: $color00a94f;
+			}
+			span:hover {
+				background-color: $color00a94f;
+				color: $colorFFFFFF;
+			}
+			span {
+				transition: background-color 0.5s linear;
+				width: 100%;
+				min-width: 191px;
+				@include to_SmTablet {
+					max-width: 250px;
+				}
+				cursor: pointer;
+				height: 40px;
+				box-shadow: 0px 1px 22px 1px rgba(69, 64, 219, 0.04);
+				border-radius: 3px 3px 0px 0px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 18.75px;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}

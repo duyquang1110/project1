@@ -1,0 +1,9 @@
+@import '/styles/global.scss';
+.table {
+	width: 100%;
+	overflow: auto;
+	tr:hover > td {
+		cursor: pointer;
+		background: $colorE5F0FB !important;
+	}
+}

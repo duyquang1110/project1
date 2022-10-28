@@ -1,0 +1,145 @@
+@import '/styles/global.scss';
+.findJobs {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 350px;
+		background-image: url('./../../../public/assets/img/HomePage/FindJobs/background.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	&__child {
+		@extend .container;
+		height: 350px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 89px 140px;
+		@include to_SmDesktop {
+			padding: 0 60px;
+		}
+		@include to_LDPhone {
+			flex-direction: column;
+			justify-content: flex-start;
+			padding-top: 59px;
+		}
+		@include to_MDPhone {
+			padding-top: 39px;
+		}
+		@include to_SmPhone {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		&__button {
+			position: relative;
+			@include to_MDPhone {
+				margin-top: 25px;
+			}
+			&__arrow {
+				margin-top: 20px;
+				position: absolute;
+				left: -32.5%;
+				bottom: -150%;
+			}
+			&__child {
+				width: 100%;
+				min-width: 148px;
+				height: 44px;
+				background: $color00a94f;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 23.44px;
+				text-align: center;
+				border: none;
+				color: $colorFFFFFF;
+				border-radius: 3px;
+			}
+		}
+		p {
+			margin: 0;
+			position: relative;
+			z-index: 8;
+			width: 100%;
+			max-width: 839px;
+			height: 60px;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 30px;
+			color: $colorFFFFFF;
+			@include to_SDesktop {
+				max-width: 723px;
+			}
+			@include to_SmDesktop {
+				max-width: 623px;
+			}
+			@include to_MTablet {
+				font-size: 16px;
+				line-height: 25px;
+				max-width: 553px;
+			}
+			@include to_SmTablet {
+				font-size: 15px;
+				line-height: 22.5px;
+				max-width: 403px;
+			}
+			@include to_LDPhone {
+				font-size: 14px;
+				line-height: 20px;
+				max-width: 100%;
+			}
+			@include to_MDPhone {
+				font-size: 13px;
+			}
+			@include to_SmPhone {
+				font-size: 12px;
+			}
+		}
+		&__title {
+			width: 100%;
+			position: relative;
+			margin: 0 0 30px 0;
+			z-index: 8;
+			max-width: 863px;
+			height: 94px;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 46.88px;
+			color: $colorFFFFFF;
+			@include to_SDesktop {
+				max-width: 783px;
+			}
+			@include to_SmDesktop {
+				max-width: 653px;
+			}
+			@include to_MTablet {
+				font-size: 35px;
+				max-width: 603px;
+			}
+			@include to_SmTablet {
+				font-size: 30px;
+				line-height: 35.88px;
+				max-width: 435px;
+				margin-bottom: 37.5px;
+			}
+			@include to_LDPhone {
+				font-size: 23px;
+				max-width: 100%;
+				line-height: 30.88px;
+				margin-bottom: 0px;
+			}
+			@include to_MDPhone {
+				font-size: 22px;
+			}
+			@include to_SmPhone {
+				font-size: 18px;
+				line-height: 25.88px;
+			}
+		}
+	}
+}

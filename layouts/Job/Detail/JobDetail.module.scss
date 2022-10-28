@@ -1,0 +1,357 @@
+@import '/styles/global.scss';
+.interview {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__save {
+			margin-right: 20px;
+			color: $color00A94F;
+			border: 2px solid $color00A94F;
+		}
+		&__applied {
+			border: none;
+			background: $color00A94F;
+		}
+		button {
+			border-radius: 3px;
+			width: 100%;
+			min-width: 148px;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 23.44px;
+			text-align: center;
+			height: 44px;
+		}
+	}
+	&__time {
+		width: 100%;
+		&__schedule {
+			border-bottom: 1px solid $colorEDEFF1;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+		h1 {
+			margin: 0 0 10px 0;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 21.09px;
+			color: $color000000;
+		}
+	}
+	&__title {
+		margin: 0 0 30px 0;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+		width: 100%;
+		color: $color363636;
+		span {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 32px;
+			color: $color363636;
+			text-align: center;
+		}
+	}
+	&__icon {
+		width: 100%;
+		text-align: right;
+		&__item {
+			cursor: pointer;
+			font-size: 1.25rem;
+		}
+	}
+}
+.jobDetail {
+	overflow: hidden;
+	@extend .container;
+	&__child {
+		margin: 96px 140px 60px 139px;
+		@include to_MDesktop {
+			margin: 96px 107.5px 60px 107.5px;
+		}
+		@include to_SDesktop {
+			margin: 96px 60px 60px 60px;
+		}
+		@include to_SmDesktop {
+			margin: 74px 60px 60px 60px;
+		}
+		@include to_SmTablet {
+			margin: 74px 23.5px 60px 23.5px;
+		}
+		&__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-width: 731px;
+			@include to_SmDesktop {
+				max-width: 100%;
+			}
+			width: 100%;
+			button {
+				width: 100%;
+				max-width: 148px;
+				height: 44px;
+				border-radius: 3px;
+				font-weight: 400;
+				margin-top: 30px;
+				font-size: 20px;
+				line-height: 23.44px;
+				text-align: center;
+			}
+			&__application {
+				color: $colorFFFFFF;
+				background: $color00A94F;
+			}
+			&__save {
+				color: $color00A94F;
+				background-color: transparent;
+				margin-right: 27px;
+				border: 2px solid $color00A94F;
+			}
+		}
+		&__item {
+			margin-top: 40px;
+			width: 100%;
+			max-width: 731px;
+			@include to_SmDesktop {
+				max-width: 100%;
+			}
+			&__content {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 30px;
+				color: $color000000;
+				margin: 0;
+			}
+			&__title {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 10px;
+				h1 {
+					margin: 0 0 0 13px;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 23.44px;
+					color: $color00A94F;
+				}
+			}
+		}
+		&__information {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			@include to_SmDesktop {
+				flex-direction: column;
+			}
+			&__right {
+				@include to_MDPhone {
+					width: 100%;
+				}
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-direction: column;
+				margin-left: 30px;
+				@include to_SmDesktop {
+					margin-left: 0;
+				}
+				&__bottom {
+					width: 100%;
+					margin-top: 20px;
+					padding: 33px 31px;
+					min-width: 400px;
+					@include to_MDPhone {
+						min-width: 100%;
+					}
+					height: 90px;
+					background: $colorFFFFFF;
+					border: 1px solid $colordee2e6;
+					border-radius: 1px;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					&__icon {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						> div {
+							cursor: pointer;
+							margin-left: 15px;
+						}
+					}
+					span {
+						margin: 0;
+						font-weight: 600;
+						font-size: 20px;
+						line-height: 23.44px;
+						color: $color000000;
+					}
+				}
+				&__top {
+					background: $colorFFFFFF;
+					border: 1px solid $colordee2e6;
+					border-radius: 1px;
+					display: flex;
+					padding: 30px 20px;
+					width: 100%;
+					max-width: 400px;
+					@include to_MDPhone {
+						max-width: 100%;
+					}
+					height: 377px;
+					@include to_SmDesktop {
+						height: 100%;
+					}
+					justify-content: flex-start;
+					align-items: flex-start;
+					flex-direction: column;
+					> div {
+						margin-bottom: 5px;
+					}
+					span {
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 24px;
+						margin: 0 0 0 5px;
+						text-transform: capitalize;
+					}
+					b {
+						font-weight: 600;
+						font-size: 16px;
+						margin: 0;
+						line-height: 24px;
+					}
+					h1 {
+						margin: 0 0 13px 0;
+						font-weight: 600;
+						font-size: 20px;
+						line-height: 23.44px;
+						color: $color00A94F;
+					}
+				}
+			}
+			> div {
+				margin-top: 20px;
+			}
+		}
+		&__company {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include to_SmDesktop {
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+				&__right {
+					margin-top: 17.5px;
+				}
+			}
+			@include to_SmTablet {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			&__right {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				@include to_SmTablet {
+					margin-top: 17.5px;
+				}
+				&__save {
+					color: $color00A94F;
+					margin-right: 20px;
+					// background-color: transparent !important;
+					border: 2px solid $color00a94f;
+				}
+				&__saveCSR {
+					color: red !important;
+					border: 2px solid red !important;
+				}
+				&__application {
+					color: $colorFFFFFF;
+					background: $color00A94F;
+				}
+				button {
+					width: 100%;
+					min-width: 148px;
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 23.44px;
+					text-align: center;
+					height: 44px;
+					border-radius: 3px;
+				}
+			}
+			&__left {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				@include to_SmPhone {
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+				}
+				&__information {
+					margin-left: 19px;
+					display: flex;
+					justify-content: flex-start;
+					align-items: flex-start;
+					flex-direction: column;
+					&__month {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						width: 100%;
+						@include to_LDPhone {
+							flex-direction: column;
+							align-items: flex-start;
+						}
+						@include to_SmPhone {
+							flex-direction: column;
+							align-items: flex-start;
+						}
+						&__money {
+							margin-right: 20px;
+						}
+						> div {
+							margin-top: 9px;
+							display: flex;
+							justify-content: flex-start;
+							align-items: center;
+							p {
+								// width: 100%;
+								// max-width: 100px;
+								font-weight: 500;
+								font-size: 16px;
+								line-height: 18.75px;
+								color: $color7f848c;
+								margin: 0;
+								// overflow: hidden;
+								// text-overflow: ellipsis;
+								// display: -webkit-box;
+								// -webkit-line-clamp: 1;
+								// -webkit-box-orient: vertical;
+							}
+						}
+					}
+					h1 {
+						margin: 0;
+						font-weight: 600;
+						font-size: 30px;
+						line-height: 35.16px;
+						color: $color000000;
+					}
+				}
+			}
+		}
+	}
+}

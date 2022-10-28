@@ -1,0 +1,33 @@
+@import '/styles/global.scss';
+.parent {
+	div {
+		margin-bottom: 17px !important;
+	}
+}
+.checkbox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	label {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16.8px;
+		color: $color000000;
+		margin-left: 12px;
+		@include to_SmPhone {
+			font-size: 12px;
+		}
+	}
+	input {
+		cursor: pointer;
+		width: 24px;
+		background-color: $colorFFFFFF;
+		border: 1px solid $colorECECEC;
+		border-radius: 4px;
+		height: 24px;
+		@include to_SmPhone {
+			height: 20px;
+			width: 20px;
+		}
+	}
+}

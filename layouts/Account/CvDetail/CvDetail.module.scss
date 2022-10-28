@@ -1,0 +1,692 @@
+@import '/styles/global.scss';
+.experience {
+	p {
+		margin: 0 0 5px 0;
+	}
+}
+.cvSave {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: centere;
+	&__item {
+		width: 100%;
+		max-width: 148px;
+		height: 44px;
+		text-align: center;
+		font-weight: 400;
+		border: none;
+		font-size: 20px;
+		line-height: 23.44px;
+		text-align: center;
+		color: $colorFFFFFF;
+		background: $color00a94f;
+		border-radius: 3px;
+	}
+}
+.cvName {
+	width: 100%;
+	margin: 20px 0 10px 0;
+	input {
+		font-weight: 600 !important;
+		font-size: 17.5px !important;
+		color: $color333333 !important;
+		text-align: center !important;
+	}
+}
+.skillItem {
+	margin-top: 15px !important;
+}
+.skill {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__iconCertification {
+		margin-left: 10px;
+		padding-top: 5px !important;
+	}
+	&__icon {
+		color: $colorRed !important;
+		cursor: pointer;
+		margin-top: 10px;
+		margin-right: 5px;
+		font-size: 1.3rem;
+	}
+}
+.add {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 5px;
+	border-bottom: 1px solid $colorDBDBDB;
+	&__img {
+		cursor: pointer;
+	}
+}
+.education {
+	width: 100%;
+	margin: 0 0 0 108px;
+	@include to_MDPhone {
+		margin: 0 0 0 78px;
+	}
+}
+.detail {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 860px;
+	margin-top: 20px;
+	@include to_MDesktop {
+		max-width: unset;
+	}
+	@include to_SmDesktop {
+		flex-direction: column;
+	}
+	@include to_LDPhone {
+		flex-direction: column;
+	}
+	&__right {
+		width: 100%;
+		margin-left: 24px;
+		min-width: 356.16px;
+		@include to_MDesktop {
+			min-width: unset;
+			width: 100%;
+		}
+		// padding: 27px 54px !important;
+		padding: 27px 0 !important;
+		@include to_SmDesktop {
+			margin-top: 24px;
+			margin-left: 0;
+			// margin-right: 24px !important;
+		}
+		background-color: $colorf1f2ff;
+		position: relative;
+		@include to_LDPhone {
+			max-width: 356.16px;
+			margin-left: 0px;
+		}
+		@include to_SmPhone {
+			max-width: 256.16px;
+		}
+		&__parentTop {
+			margin-bottom: 60px !important;
+		}
+		&__parent {
+			margin-bottom: 30px;
+			width: 100%;
+			&__itemSpecial {
+				display: flex;
+				width: 100%;
+				justify-content: flex-start !important;
+				align-items: flex-start !important;
+				margin-top: 15px !important;
+				@include to_LDPhone {
+					flex-direction: column;
+					padding-right: 110px;
+				}
+				&__line {
+					margin: 15px 3.5px 0 10px;
+					@include to_LDPhone {
+						display: none;
+					}
+				}
+				&__icon {
+					cursor: pointer;
+					color: $colorRed;
+					margin-top: 7.5px;
+					margin-right: 6.5px;
+					font-size: 1.3rem;
+				}
+				&__inputError {
+					border-bottom: 1px solid $colorRed !important;
+				}
+				&__input {
+					border: none;
+					width: 125px;
+					@include to_SmDesktop {
+						width: 300px;
+					}
+					@include to_MTablet {
+						width: 235px;
+					}
+					@include to_SmTablet {
+						width: 100px;
+					}
+					@include to_LDPhone {
+						width: 100%;
+					}
+					@include to_MDPhone {
+						width: 195px;
+					}
+					@include to_SmPhone {
+						width: 167.5px;
+					}
+					padding-bottom: 2.5px;
+					margin: 10px 0 0 0;
+					border-bottom: 1px solid $colorDBDBDB;
+					font-size: 15px;
+					color: $color555555;
+					font-weight: 500;
+					background-color: transparent !important;
+				}
+			}
+			&__item {
+				width: 100%;
+				min-height: 50px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+				flex-direction: column;
+				&__titleIcon {
+					position: relative !important;
+					width: 100%;
+					padding: 0 39px !important;
+					&__child {
+						color: $color555555;
+						font-size: 18px !important;
+						margin: 0 !important;
+						font-weight: 600;
+						width: 100% !important;
+						padding: 0;
+					}
+					&__icon {
+						background-color: $color5d5fef !important;
+						border-radius: 20px;
+						position: absolute !important;
+						top: -5%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						// left: -20%;
+						left: -4%;
+						@include to_MDesktop {
+							left: -4.5%;
+						}
+						@include to_SDesktop {
+							left: -5%;
+						}
+						@include to_SmDesktop {
+							left: -2.75%;
+						}
+						@include to_SmTablet {
+							left: -4%;
+						}
+						@include to_LDPhone {
+							left: -5%;
+						}
+						@include to_SmPhone {
+							left: -7%;
+						}
+						width: 40px;
+						height: 40px;
+						&__child {
+							width: 22.5.72px;
+							height: 17.5px;
+							color: $colorFFFFFF;
+						}
+					}
+				}
+				&__specialItem {
+					margin-top: 15px !important;
+				}
+				&__specialCertification {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-start;
+				}
+				&__special {
+					width: 100%;
+					padding-right: 108px !important;
+					@include to_MDPhone {
+						padding-right: 78px !important;
+					}
+					// input {
+					// 	margin-right: 100px !important;
+					// }
+					:global {
+						textarea.ant-input {
+							height: 132.5px;
+							padding: 10px 15px;
+						}
+					}
+					&__areaError {
+						border: 1px solid $colorRed !important;
+					}
+					&__areaCertification {
+					}
+					&__area {
+						width: 100%;
+						background-color: transparent;
+						// line-height: 17.5px !important;
+						margin-top: 15px;
+						input::-webkit-input-placeholder,
+						textarea::-webkit-input-placeholder {
+							color: $color747575 !important;
+						}
+						&__borderError {
+							border: 1px solid $colorRed !important;
+						}
+						&__borderNormal {
+							border: 1px solid $colorDBDBDB !important;
+						}
+					}
+					&__inputError {
+						border-bottom: 1px solid $colorRed !important;
+					}
+					&__input {
+						border: none;
+						width: 100%;
+						margin: 10px 0 0 0;
+						@include to_LDPhone {
+							margin-right: 10px;
+						}
+						padding-bottom: 2.5px;
+						border-bottom: 1px solid $colorDBDBDB;
+						font-size: 15px;
+						color: $color555555;
+						font-weight: 500;
+						background-color: transparent;
+						// input {
+						// 	padding-right: 100px !important;
+						// }
+					}
+				}
+				&__time {
+					@include to_MDPhone {
+						flex-direction: column;
+					}
+					:global {
+						.ant-picker.ant-picker-borderless {
+							padding: 0 !important;
+						}
+					}
+					&__line {
+						margin-top: 5.5px !important;
+						@include to_MDPhone {
+							// padding-right: 20px !important;
+						}
+					}
+					&__input {
+						@include to_LDPhone {
+							min-width: 58.5%;
+						}
+					}
+					input {
+						margin-top: 7px;
+						border: none;
+						width: 85px;
+						@include to_MDesktop {
+							width: 120px;
+						}
+						@include to_SmTablet {
+							width: 90px;
+						}
+						@include to_LDPhone {
+							width: 100%;
+							margin-left: -5px !important;
+						}
+						@include to_MDPhone {
+							width: 195px;
+						}
+						@include to_SmPhone {
+							width: 167.5px;
+						}
+						border-bottom: 1px solid $colorDBDBDB;
+					}
+				}
+			}
+			&__iconCog {
+				margin-top: 538.5px !important;
+			}
+			&__iconCertificate {
+				margin-top: 741px !important;
+			}
+			&__icon {
+				background-color: $color5d5fef !important;
+				border-radius: 20px;
+				position: absolute;
+				top: 0;
+				margin-top: 395px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				left: -17.5px;
+				width: 40px;
+				height: 40px;
+				&__child {
+					width: 22.5.72px;
+					height: 17.5px;
+					color: white;
+				}
+			}
+			&__position {
+				font-size: 15px;
+				margin: 7.5px 0;
+				width: 100%;
+				font-weight: 600;
+				color: $color555555 !important;
+			}
+			&__title {
+				color: $color555555;
+				font-size: 18px !important;
+				margin: 0 !important;
+				font-weight: 600;
+				width: 100%;
+				padding: 0;
+			}
+			&__type {
+				color: $color555555;
+				font-weight: 300;
+				font-size: 15px;
+				width: 100%;
+				margin: 2.5px 0 0 0 !important;
+			}
+			&__item {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				margin: 12.5px 0 0 0;
+				span {
+					color: $color555555;
+					font-weight: 700;
+				}
+				&__title {
+					color: $color555555;
+					font-size: 15px !important;
+					margin: 0;
+					text-transform: uppercase;
+					padding-right: 5px;
+					font-weight: 700;
+				}
+				&__time {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					padding-left: 5px;
+					&__line {
+						margin: 0 0.25rem;
+					}
+					span {
+						font-size: 13px;
+						color: $color333333;
+					}
+				}
+				h3 {
+					margin: 0 0 0 0 !important;
+					color: $color555555;
+					font-size: 15px;
+				}
+			}
+			&__menu {
+				margin-top: 12.5px;
+				position: absolute;
+				flex-direction: column;
+				width: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				max-width: 40px;
+				background-color: $color5d5fef !important;
+				border-radius: 20px;
+				left: -17.5px;
+				top: 0;
+				&__iconCalendar {
+					width: 18.58px;
+					height: 20px;
+				}
+				&__iconPhone {
+					width: 16px !important;
+					height: 16px !important;
+				}
+				&__iconLink {
+					width: 18.58px;
+					height: 20px;
+				}
+				&__iconUser {
+					width: 15.72px;
+					height: 20px;
+				}
+				&__iconSquare {
+					width: 17.15px !important;
+					height: 20px !important;
+				}
+				&__icon:last-child {
+					padding-bottom: 15px !important;
+				}
+				&__icon {
+					cursor: pointer;
+					padding: 15px 12.5px 25px 12.5px;
+					color: white;
+				}
+			}
+		}
+		&__item {
+			padding: 0 39px !important;
+			margin-bottom: 17px;
+			:global {
+				.ant-picker.ant-picker-borderless {
+					padding: 0 !important;
+				}
+			}
+			&__input {
+				border: none !important;
+				input {
+					border: none !important;
+					background-color: transparent !important;
+				}
+			}
+			&__informationCalendar {
+				input {
+					border-bottom: 1px solid $colorDBDBDB !important;
+				}
+			}
+			&__information {
+				margin: 0;
+				width: 100%;
+				color: $color333333;
+			}
+			a {
+				color: $color333333;
+			}
+		}
+		h1 {
+			color: $color333333;
+			margin: 0 0 5px 0;
+			font-size: 15px;
+			font-weight: 600;
+		}
+	}
+	&__left {
+		min-width: 375px;
+		@include to_MDesktop {
+			min-width: unset;
+			width: 100%;
+		}
+		@include to_LDPhone {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+		&__special {
+			margin: 20px 0;
+			input {
+				font-size: 15px;
+				color: $color555555;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+		&__career {
+			margin: 20px 0 2px 0;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 22px;
+			color: $color333333;
+		}
+		&__fullName {
+			margin: 20px 0;
+			input {
+				font-weight: 700;
+				font-size: 24px;
+				color: $color555555;
+				text-transform: uppercase;
+			}
+		}
+		&__upload {
+			opacity: 0;
+			visibility: hidden;
+			position: fixed;
+			left: -1000px;
+		}
+		&__item {
+			// margin: 12px 0 0 0;
+			:global {
+				.ant-picker.ant-picker-borderless {
+					padding: 0 !important;
+				}
+			}
+			input {
+				border: none;
+				width: 117.5px;
+				border-bottom: 1px solid $colorDBDBDB;
+			}
+		}
+		&__parent {
+			margin: 25px 0 0 0;
+			&__line {
+				margin: 22.5px 0 0 0;
+				position: relative;
+				&__inputCompany {
+					font-size: 15px !important;
+				}
+				&__delete {
+					position: absolute;
+					right: 0;
+					top: 0;
+					cursor: pointer;
+					color: $colorRed;
+					margin-right: 6.5px;
+					font-size: 1.3rem;
+				}
+				&__areaError {
+					border: 1px solid $colorRed !important;
+				}
+				:global {
+					textarea.ant-input {
+						height: 132.5px;
+						padding: 10px 15px;
+					}
+				}
+				&__area {
+					width: 100%;
+					// line-height: 17.5px !important;
+					margin-top: 15px;
+					input::-webkit-input-placeholder,
+					textarea::-webkit-input-placeholder {
+						color: $color747575 !important;
+					}
+					&__borderError {
+						border: 1px solid $colorRed !important;
+					}
+					&__borderNormal {
+						border: 1px solid $colorDBDBDB !important;
+					}
+				}
+				&__inputError {
+					border-bottom: 1px solid $colorRed !important;
+				}
+				&__input {
+					border: none;
+					width: 100%;
+					padding-bottom: 2.5px;
+					margin: 10px 0 0 0;
+					border-bottom: 1px solid $colorDBDBDB;
+					font-size: 15px;
+					color: $color555555;
+					font-weight: 500;
+				}
+			}
+		}
+		&__content {
+			margin: 5px 0 0 0;
+			padding: 0;
+			font-weight: 300;
+			color: $color555555;
+		}
+		&__company {
+			color: $color555555;
+			font-weight: inherit;
+			margin: 7.5px 0;
+			padding: 0;
+			font-weight: 700;
+			font-size: 100%;
+		}
+		&__positionCity {
+			font-weight: 600;
+			color: $color555555;
+			font-size: 15px;
+			margin: 7.5px 0 0 0;
+		}
+		&__img {
+			position: relative;
+			width: 180px;
+			&__item {
+				cursor: pointer;
+				border-radius: 50%;
+			}
+			&__icon {
+				top: 0;
+				cursor: pointer;
+				width: 35px;
+				margin: 5px 5px 0 0;
+				height: 35px;
+				right: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				color: $colorFFFFFF;
+				background-color: $color363636;
+				font-size: 1rem;
+				position: absolute;
+			}
+		}
+		&__date {
+			margin: 0;
+			padding: 0;
+			color: $color585858;
+			font-weight: 300;
+			&__icon {
+				margin: 0 0.5rem;
+			}
+		}
+		&__exp {
+			color: $color5d5fef;
+			font-weight: 700;
+			font-size: 18px;
+			margin: 0;
+		}
+		&__des {
+			font-weight: 300;
+			margin: 5px 0 0 0;
+			color: $color333333;
+			line-height: 22px;
+		}
+		&__name {
+			font-weight: 700;
+			color: $color555555;
+			font-size: 24px;
+			text-transform: uppercase;
+			line-height: 42px;
+			margin: 17.5px 0 0 0 !important;
+		}
+		&__position {
+			font-size: 15px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			color: $color555555;
+			text-transform: uppercase;
+		}
+	}
+}

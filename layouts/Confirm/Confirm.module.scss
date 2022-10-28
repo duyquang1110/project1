@@ -1,0 +1,150 @@
+@import '/styles/global.scss';
+.confirm {
+	background-color: $colorF6FAFD;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__child {
+		@extend .container;
+		width: 792px;
+		height: 518px;
+		background: $colorFFFFFF;
+		box-shadow: 0px 16px 60px rgba(0, 0, 0, 0.05);
+		border-radius: 20px;
+		padding: 70px 69px;
+		@include to_MTablet {
+			height: 500px;
+			padding: 50px;
+		}
+		@include to_SmTablet {
+			width: 650px;
+			height: 475px;
+		}
+		@include to_LDPhone {
+			width: 450px;
+			height: 425px;
+			padding: 40px;
+		}
+		@include to_MDPhone {
+			width: 400px;
+			height: 400px;
+			padding: 30px;
+		}
+		@include to_SmPhone {
+			width: 350px;
+			height: 375px;
+			padding: 25px;
+		}
+		&__otp {
+			margin: 20px 0;
+			@include to_LDPhone {
+				margin: 15px 0;
+			}
+		}
+		&__confirm {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 21.6px;
+			color: $color151212;
+			margin: 0;
+			@include to_MTablet {
+				font-size: 17px;
+			}
+			@include to_SmTablet {
+				font-size: 16px;
+				line-height: 19.6px;
+			}
+			@include to_LDPhone {
+				font-size: 14px;
+			}
+			@include to_MDPhone {
+				font-size: 13px;
+				line-height: 17.6px;
+			}
+			@include to_SmPhone {
+				font-size: 12px;
+				line-height: 15.6px;
+			}
+			span {
+				color: $color0B72D8;
+			}
+		}
+		&__resend {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 21.6px;
+			color: $color666666;
+			@include to_MTablet {
+				font-size: 17px;
+			}
+			@include to_SmTablet {
+				font-size: 16px;
+			}
+			@include to_LDPhone {
+				font-size: 14px;
+			}
+			@include to_MDPhone {
+				font-size: 13px;
+			}
+			@include to_SmPhone {
+				font-size: 12px;
+			}
+			span {
+				cursor: pointer;
+				color: $color0B72D8;
+			}
+		}
+		h3 {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 24px;
+			color: $color000000;
+			text-align: center;
+			@include to_MTablet {
+				font-size: 22px;
+			}
+			@include to_SmTablet {
+				font-size: 20px;
+			}
+			@include to_LDPhone {
+				font-size: 18px;
+			}
+			@include to_MDPhone {
+				font-size: 16px;
+			}
+			@include to_SmPhone {
+				font-size: 15px;
+			}
+		}
+		&__img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 41px 0 55.09px 0;
+			@include to_MTablet {
+				margin: 36px 0 40.09px 0;
+			}
+			@include to_SmTablet {
+				margin: 31px 0 35.09px 0;
+			}
+			@include to_LDPhone {
+				margin: 21px 0 25.09px 0;
+				&__item {
+					padding: 1rem !important;
+				}
+			}
+			@include to_MDPhone {
+				margin: 11px 0 15.09px 0;
+			}
+			@include to_SmPhone {
+				margin: 1px 0 5.09px 0;
+				&__item {
+					padding: 1.25rem !important;
+				}
+			}
+		}
+	}
+}

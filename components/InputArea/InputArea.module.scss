@@ -1,0 +1,20 @@
+@import '/styles/global.scss';
+.textArea {
+	width: 100%;
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+    	color: $color747575 !important;
+    }
+    :global {
+        textarea.ant-input {
+           height: 132.5px;
+           padding: 10px 15px;
+        }
+    }
+	&__borderError {
+		border: 1px solid $colorRed !important;
+	}
+	&__borderNormal {
+		border: 1px solid $colorDBDBDB !important;
+	}
+}

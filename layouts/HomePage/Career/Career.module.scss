@@ -1,0 +1,120 @@
+@import '/styles/global.scss';
+.career {
+	@extend .container;
+	&__child {
+		margin: 60px 139px;
+		@include to_LDPhone {
+			margin: 45px 80px 45px 80px;
+		}
+		@include to_MDPhone {
+			margin: 45px 50px 45px 50px;
+		}
+		@include to_SmPhone {
+			margin: 45px 30px 45px 30px;
+		}
+		&__company {
+			margin: 60px 0;
+			display: grid;
+			grid-gap: 64px;
+			grid-template-columns: repeat(6, 1fr);
+			@include to_SmDesktop {
+				grid-template-columns: repeat(4, 1fr);
+			}
+			@include to_MTablet {
+				grid-template-columns: repeat(3, 1fr);
+			}
+			@include to_MDPhone {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			img {
+				cursor: pointer;
+			}
+		}
+		&__img {
+			margin-bottom: 40px;
+		}
+		&__parent {
+			display: grid;
+			grid-gap: 16px;
+			grid-template-columns: repeat(3, 1fr);
+			@include to_SmDesktop {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@include to_SmTablet {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+			@include to_LDPhone {
+				grid-gap: unset;
+				grid-row-gap: 16px;
+			}
+			&__item {
+				width: 100%;
+				max-width: 376px;
+				@include to_SmTablet {
+					min-width: 376px;
+				}
+				@include to_LDPhone {
+					margin-right: 0;
+				}
+				@include to_SmPhone {
+					min-width: 316px;
+				}
+				height: 395px;
+				margin-right: 16px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding-bottom: 33px;
+				flex-direction: column;
+				background: $colorf5f5f5;
+				border: 1px solid $colorf5f5f5;
+				&__button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					&__child {
+						width: 100%;
+						min-width: 148px;
+						height: 44px;
+						background: $color00a94f;
+						border-radius: 3px;
+						font-weight: 400;
+						font-size: 20px;
+						line-height: 23.44px;
+						text-align: center;
+						color: $colorFFFFFF;
+					}
+				}
+				p {
+					margin: 0 0 13px 0;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 24px;
+					text-align: center;
+					color: $color000000;
+					width: 100%;
+					max-width: 284px;
+					height: 78px;
+					@include to_SmPhone {
+						font-size: 13px;
+						line-height: 20px;
+					}
+				}
+				h1 {
+					margin: 37.03px 0 8px 0;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 21.09px;
+					text-align: center;
+					color: $color000000;
+					@include to_SmPhone {
+						font-size: 17.5px;
+					}
+				}
+			}
+		}
+	}
+}
